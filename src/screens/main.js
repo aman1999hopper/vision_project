@@ -6,8 +6,10 @@ import Card from "../components/card";
 
 export default function Main() {
     return (
+        //  This is the structure of the main screens which shows whe 
         <div className="p-1 rounded-lg bg-white">
 
+            {/* Child div for applying section and holds the two tabs and diffrent values  */}
             <div className="flex md:gap-8 gap-3 items-center md:p-4 p-2">
                 <div>Applying Form</div>
                 <div className="hover:font-bold">
@@ -22,11 +24,13 @@ export default function Main() {
                 <div>How much to deposite?</div>
                 <div className="flex justify-center mt-5 ">
                     <div className="flex gap-5">
+                        {/* Currencey tabs defnes here  */}
                         <div><Tabs value='USD' /></div>
                         <div><Tabs value='HKD' /></div>
                         <div><Tabs value='RMB' /></div>
                     </div>
                 </div>
+                {/* This will holds the amount price and the edit svg  */}
                 <div className="flex justify-center">
                     <div className="flex items-baseline gap-[60px] ">
                         <div className=" text-[40px] sm:text-[70px] text-blue-500">100,000</div>
@@ -38,6 +42,7 @@ export default function Main() {
                         </div>
                     </div>
                 </div>
+                {/* This represent the range value slider  */}
                 <div>
                     <input id="custom-range" type="range" className="w-full h-1 rounded-lg appearance-none cursor-pointer dark:bg-gray-300" />
                 </div>
@@ -48,6 +53,7 @@ export default function Main() {
                     <div className="text-start p-2">Set up Time Deposite with</div>
                     <div className="flex gap-[40px] sm:flex-nowrap flex-wrap sm:justify-normal justify-center">
                         <div>
+                            {/* This value define same as we provide value as argument and print this value of radio button */}
                             <Radiobutton value='New funds' />
                         </div>
                         <div>
@@ -78,6 +84,7 @@ export default function Main() {
                     </div>
                     <div>40,000 Asia Miles</div>
                 </div>
+                {/* This is the apply Button which we can define in component and use here  */}
                 <div className="flex justify-center"><Button /></div>
                 <div className="text-center mt-10">
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.

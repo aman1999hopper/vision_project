@@ -12,6 +12,7 @@ export default function Discover() {
                     w-fit">Shorted by highest to lowest miles</div>
             </div>
             <div className="flex md:flex-nowrap flex-wrap gap-10">
+                {/* Use cards here and it will be defined in components card here we can change the props value and use same structue */}
                 <div>
                     <Card name='Australia' price='40000' value='Perth'/>
                 </div>
@@ -20,13 +21,16 @@ export default function Discover() {
                 </div>
             </div>
 
+            {/* Define see more button  */}
             <div className="text-center text-blue-500 py-6">See More</div>
 
+            {/* Defines the second card row with cards and see more button */}
             <div className="flex justify-between flex-wrap py-5">
                 <div className="px-2 py-2"><span className="font-bold">04</span> Destinations almost within reach</div>
             </div>
             <div className="flex md:flex-nowrap flex-wrap gap-10">
                 <div>
+                    {/* Use different value, name, price for cards  */}
                     <Card name='New Zealand' price='50000' value='Auckland' />
                 </div>
                 <div>
