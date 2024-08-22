@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Discover from './screens/discover';
+import Main from './screens/main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='py-3 md:px-10 px-5 bg-stone-200'>
+      <div className='text-3xl text-center'>Find out how many Asia Miles reward you can earn.</div>
+      <div className='text-center my-4'>With the Asia Miles Time Deposite Calculator</div>
+      <Main/>
+      <Discover/>
     </div>
   );
 }
