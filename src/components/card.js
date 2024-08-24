@@ -2,7 +2,7 @@ import React from "react";
 import Tabs from "./tabs";
 
 // This is the react functional component that takes three props 
-export default function Card({name , price , value}){
+export default function Card({name , price , value,}){
     return(
         // This is the parent component that will contain the card contents 
         <div className="border rounded-xl">
